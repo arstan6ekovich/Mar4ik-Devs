@@ -1,0 +1,79 @@
+.Footer {
+  background: linear-gradient(-45deg, #1b0334, rgb(13, 16, 25)) fixed;
+  display: flex;
+  .content {
+    font-family: "Gill Sans", sans-serif;
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h3 {
+        color: white;
+      }
+      h4 {
+        position: absolute;
+        margin-left: 600px;
+        color: white;
+        span {
+          color: #9336fd;
+        }
+      }
+      @media (max-width: 430) {
+        h4 {
+            margin-left: 0px;
+            margin-top: 130px;
+        }
+      }
+      h2 {
+        color: white;
+        font-size: 50px;
+      }
+    }
+    @media (max-width: 430) {
+      .nav {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    @media (max-width: 360px) {
+      .nav {
+        display: flex;
+        margin-top: 30px;
+        flex-direction: column;
+      }
+    }
+    @media (max-width: 414px) {
+      .nav {
+        display: flex;
+        margin-top: 30px;
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media (max-width: 430) {
+    .Footer {
+        height: 20vh;
+    }
+}
+
+@media (max-width: 360px) {
+  .Footer {
+      height: 30vh;
+      width: 420px;
+  }
+}
+
+@media (max-width: 375) {
+  .Footer {
+      height: 30vh;
+      width: 420px;
+  }
+}
+@media (max-width: 414px) {
+  .Footer {
+      height: 30vh;
+      width: 414px;
+  }
+}

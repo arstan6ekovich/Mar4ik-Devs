@@ -1,0 +1,41 @@
+.burger_menu {
+  position: absolute;
+  top: 150px;
+  right: -300px;
+  width: 270px;
+  height: 270px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  background: linear-gradient(-45deg, #1b03342a, rgba(13, 16, 25, 0.117));
+  border: 1px solid #9336fd;
+  transition: 0.5s;
+  li {
+    list-style: none;
+  }
+
+  &.active {
+    right: 0px;
+  }
+  html {
+    &.active {
+      right: 0px;
+    }
+  }
+  .content {
+    p {
+      color: #9336fd;
+    }
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 10px;
+      color: white;
+      font-family: Inter;
+    }
+  }
+}
+

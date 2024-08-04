@@ -1,0 +1,10 @@
+.Layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;  
+  background: radial-gradient(40.17% 39.79% at 50% 50%, rgba(160, 20, 240, .2) 0, rgba(170, 20, 240, 0) 100%);
+  footer {
+    margin-top: auto;
+  }
+}

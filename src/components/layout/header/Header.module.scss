@@ -1,0 +1,81 @@
+.Header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 30px 0;
+  border-bottom: 1px solid #9336fd;
+  background: red;
+  background: var(--header-scroll-active);
+  box-shadow: 0px 0px 5px var(--header-scroll-box-shadow);
+  backdrop-filter: blur(80px);
+  z-index: 999;
+  .scroll {
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h2:hover {
+        color: #9336fd;
+        font-size: 27px;
+        transition: 2s;
+      }
+      .logo {
+        font-family: "Gill Sans", sans-serif;
+        color: white;
+        font-family: normal;
+      }
+      @media (max-width: 1000) {
+        .logo {
+          margin-left: 30px;
+        }
+      }
+      .nav {
+        p {
+          color: #9336fd;
+        }
+        ul {
+          display: flex;
+          gap: 20px;
+          color: white;
+          font-family: normal;
+          margin-left: 350px;
+
+          li {
+            list-style: none;
+            cursor: grab;
+            transition: 1s;
+          }
+
+          li:hover {
+            color: #9336fd;
+          }
+          li:focus {
+            color: #9336fd;
+          }
+        }
+      }
+      .resume {
+        button {
+          padding: 10px 30px;
+          border: 2px solid #9336fd;
+          backdrop-filter: blur(10px);
+          color: #9336fd;
+          background: rgba(245, 222, 179, 0);
+          cursor: pointer;
+          font-family: normal;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1000) {
+  .Header {
+    position: none;
+  }
+}
+
+

@@ -1,0 +1,16 @@
+.Home {
+  width: 100%;
+  background: linear-gradient(-45deg, #1b0334, rgb(13, 16, 25)) fixed;
+}
+
+@media (max-width: 360px) {
+  .Home {
+    width: 420px;
+  }
+}
+
+@media (max-width: 375px) {
+  .Home {
+    width: 420px;
+  }
+}
