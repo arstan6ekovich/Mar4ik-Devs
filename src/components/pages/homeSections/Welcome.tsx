@@ -10,13 +10,14 @@ import AOS from "aos";
 import { FaGithub } from "react-icons/fa6";
 
 const Welcome = () => {
-  const [scrollPostion, setScrollPostion] = useState(0);
-  console.log(scrollPostion);
+  const [scrollPosition, setScrollPosition] = useState(0);
+  console.log(scrollPosition);
 
   const handleScroll = () => {
     const position = window.pageYOffset;
-    setScrollPostion(position);
+    setScrollPosition(position);
   };
+
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -29,12 +30,13 @@ const Welcome = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  });
+  }, []);
+
   return (
     <section id="home" className={scss.Welcome}>
       <div className="container">
         <div className={scss.content}>
-          <h1>Hi A'm Marlen (Mar4ik) </h1>
+          <h1>Hi I&apos;m Marlen (Mar4ik) </h1>
           <h1 className={scss.title}>
             I am
             <span>
@@ -68,7 +70,7 @@ const Welcome = () => {
               <button>My pride is Mar4ik Dev! </button>
             </Link>
           </div>
-          <div style={{}} className={scss.UserImage}>
+          <div className={scss.UserImage}>
             <Image src={user} alt="photo" />
           </div>
         </div>
