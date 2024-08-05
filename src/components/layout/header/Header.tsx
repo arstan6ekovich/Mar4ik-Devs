@@ -86,7 +86,7 @@ const Header = () => {
         <div className="container">
           <div className={scss.content}>
             <div className={scss.logo}>
-              <h1>Mar4ik Dev</h1>
+              <h1>Mar4ik</h1>
             </div>
             {isMobile ? (
               <>

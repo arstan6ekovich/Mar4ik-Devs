@@ -5,9 +5,7 @@ import { Typewriter } from "react-simple-typewriter";
 import Link from "next/link";
 import Image from "next/image";
 import user from "../../../assets/tech-icons/userImage.jpg";
-import { motion } from "framer-motion";
 import AOS from "aos";
-import { FaGithub } from "react-icons/fa6";
 
 const Welcome = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
