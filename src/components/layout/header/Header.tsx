@@ -6,8 +6,6 @@ import { FC, ReactNode, useEffect, useState } from "react";
 import BurgerMenu from "./BurgerMenu";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import logo from "../../../assets/Без названия (1).png";
-import Image from "next/image";
 import { CiMenuFries } from "react-icons/ci";
 
 
@@ -86,7 +84,7 @@ const Header = () => {
         <div className="container">
           <div className={scss.content}>
             <div className={scss.logo}>
-              <h1>Mar4ik</h1>
+              <h1>Mar4ik Dev</h1>
             </div>
             {isMobile ? (
               <>
